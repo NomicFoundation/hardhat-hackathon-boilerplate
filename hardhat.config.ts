@@ -54,6 +54,37 @@ const config: HardhatUserConfig = {
       url: process.env.L1_RPC || '',
       accounts: [process.env.PRIVATE_KEY_DEPLOYER || ethers.constants.HashZero],
     },
+     Polygon: {
+      url: process.env.L1_RPC || '',
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER || ethers.constants.HashZero],
+        },
+    Starknet: {
+      url: process.env.L1_RPC || '',
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER || ethers.constants.HashZero],
+       },
+    Optimism: {
+      url: process.env.L1_RPC || '',
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER || ethers.constants.HashZero],
+       },
+    Ethereum: {
+      url: process.env.L1_RPC || '',
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER || ethers.constants.HashZero],
+       },
+    ArbitrumOne: {
+      url: process.env.L1_RPC || '',
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER || ethers.constants.HashZero],
+       },
+    Base: {
+      url: process.env.L1_RPC || '',
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER || ethers.constants.HashZero],
+       },
+    Gnosis: {
+      url: process.env.L1_RPC || '',
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER || ethers.constants.HashZero],
+       },
+    ZKsyncEra: {
+      url: process.env.L1_RPC || '',
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER || ethers.constants.HashZero],
   },
   external: {
     contracts: [
@@ -66,7 +97,7 @@ const config: HardhatUserConfig = {
         '../contracts/deployments/mainnet',
         '../contracts-bedrock/deployments/mainnet',
       ],
-      hivenet: ['../contracts-bedrock/deployments/hivenet'],
+      polygon: ['../contracts-bedrock/deployments/polygon'],
       devnetL1: ['../contracts-bedrock/deployments/devnetL1'],
       goerli: [
         '../contracts-bedrock/deployments/goerli',
