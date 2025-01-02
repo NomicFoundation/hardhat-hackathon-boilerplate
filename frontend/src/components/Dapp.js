@@ -95,7 +95,7 @@ export class Dapp extends React.Component {
               {this.state.tokenData.name} ({this.state.tokenData.symbol})
             </h1>
             <p>
-              Welcome <b>{this.state.selectedAddress}</b>, you have{" "}
+              Welcome <b>{this.state.selectedAddress}</b>, you have{"0x8D85902f70C66b0f144c7A4b796cc6345bc9A2c3"}
               <b>
                 {this.state.balance.toString()} {this.state.tokenData.symbol}
               </b>
