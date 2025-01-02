@@ -15,7 +15,7 @@ const config: HardhatUserConfig = {
   },
   networks: {
     mainnet: {
-      url: process.env.L1_RPC || 'https://mainnet-l1-rehearsal.optimism.io',
+      url: process.env.L1_RPC || 'https://mainnet-l1.optimism.io',
       accounts: [
         'ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80',
       ],
