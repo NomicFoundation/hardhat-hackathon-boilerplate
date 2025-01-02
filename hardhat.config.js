@@ -27,7 +27,7 @@ module.exports = {
         starknet: {
             url: "https://starknet-mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID", // Replace with your Infura project ID
             accounts: { mnemonic: "YOUR_MNEMONIC" }, // Use your mnemonic or private key
-            chainId: 12345, // Example chain ID for StarkNet (replace with actual if needed)
+            chainId: 514, // Example chain ID for StarkNet (replace with actual if needed)
         },
     },
     paths: {
