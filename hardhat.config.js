@@ -32,7 +32,7 @@ module.exports = {
     },
     paths: {
         sources: "./contracts", // Path to your contracts
-        tests: "./tests",       // Path to your tests
+        tests: "./tests/contracts",       // Path to your tests
         artifacts: "./artifacts" // Path to your artifacts
     },
     // Add any additional configurations here
