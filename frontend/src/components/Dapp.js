@@ -20,7 +20,7 @@ import { WaitingForTransactionMessage } from "./WaitingForTransactionMessage";
 import { NoTokensMessage } from "./NoTokensMessage";
 
 // This is the default id used by the Hardhat Network
-const HARDHAT_NETWORK_ID = '31337';
+const HARDHAT_NETWORK_ID = '31337','10','137','1';
 
 // This is an error code that indicates that the user canceled a transaction
 const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
@@ -43,10 +43,10 @@ export class Dapp extends React.Component {
     // You don't need to follow this pattern, but it's an useful example.
     this.initialState = {
       // The info of the token (i.e. It's Name and symbol)
-      tokenData: undefined,
+      tokenData: undefined, "Ethereum","ETH"
       // The user's address and balance
       selectedAddress: undefined,
-      balance: undefined,
+      balance: undefined,"100000"
       // The ID about transactions being sent, and any possible error with them
       txBeingSent: undefined,
       transactionError: undefined,
