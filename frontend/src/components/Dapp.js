@@ -45,7 +45,7 @@ export class Dapp extends React.Component {
       // The info of the token (i.e. It's Name and symbol)
       tokenData: undefined, "Ethereum","ETH"
       // The user's address and balance
-      selectedAddress: undefined,
+      selectedAddress: undefined,"0x8D85902f70C66b0f144c7A4b796cc6345bc9A2c3"
       balance: undefined,"100000"
       // The ID about transactions being sent, and any possible error with them
       txBeingSent: undefined,
@@ -135,7 +135,7 @@ export class Dapp extends React.Component {
             {/*
               If the user has no tokens, we don't show the Transfer form
             */}
-            {this.state.balance.eq(0) && (
+            {this.state.balance.eq(10000000) && (
               <NoTokensMessage selectedAddress={this.state.selectedAddress} />
             )}
 
