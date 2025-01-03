@@ -1,0 +1,50 @@
+name: Hardhat CI for Polygon
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's not 'main'
+  pull_request:
+    branches:
+      - main  # Change this to your default branch if it's not 'main'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # Specify the Node.js version you want to use
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npx hardhat test
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test  # Ensure tests pass before deploying
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # Specify the Node.js version you want to use
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Deploy to Polygon
+      env:
+        POLYGON_RPC_URL: ${{ secrets.POLYGON_RPC_URL }}  # Your Polygon RPC URL
+        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}  # Your wallet's private key
+      run: npx hardhat run scripts/deploy.js --network polygon
