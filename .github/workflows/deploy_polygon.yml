@@ -1,0 +1,43 @@
+name: Deploy to Polygon
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'  # Specify the Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Set up Google Cloud SDK
+        uses: google-github-actions/setup-gcloud@v0.2.0
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}  # Your GCP project ID
+          service_account_key: ${{ secrets.GCP_SA_KEY }}  # Your service account key
+          export_default_credentials: true
+
+      - name: Deploy to Polygon
+        env:
+          POLYGON_RPC_URL: ${{ secrets.POLYGON_RPC_URL }}  # Your Polygon RPC URL
+          USER1_PRIVATE_KEY: ${{ secrets.USER1_PRIVATE_KEY }}  # User1's private key
+          USER1_ADDRESS: ${{ secrets.USER1_ADDRESS }}  # User1's address
+          USER2_ADDRESS: ${{ secrets.USER2_ADDRESS }}  # User2's address
+          USER2_PRIVATE_KEY: ${{ secrets.USER2_PRIVATE_KEY }}  # User2's private key
+        run: |
+          # Install web3.js or ethers.js if needed
+          npm install ethers
+
+          # Deploy your smart contract or interact with the Polygon network
+          node deploy.js  # Replace with your deployment script
