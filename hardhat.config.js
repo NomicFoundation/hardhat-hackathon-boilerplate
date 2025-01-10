@@ -2,6 +2,7 @@ require("@nomicfoundation/hardhat-toolbox");
 require("@nomicfoundation/hardhat-ethers");
 require("@nomicfoundation/hardhat-foundry");
 require("@nomiclabs/hardhat-waffle"); // Optional, if you need Waffle for testing
+require('doetenv').config()
 
 /** @type import('hardhat/config').HardhatUser Config */
 module.exports = {
@@ -46,4 +47,13 @@ require("https://github.com/VersoriumX/hardhat-boilerplate/blob/master/wallet_v2
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.20",
+    default networks: 'Hardhat',
+    networks:{
+        Hardhat:{
+            chainid: 137,
+            forking:{
+                url: process.env.MAINNET_RPC_URL
+            },
+        },
+    }
 };
