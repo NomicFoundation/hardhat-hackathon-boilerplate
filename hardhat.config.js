@@ -9,11 +9,11 @@ module.exports = {
     solidity: "0.8.20", // Specify your Solidity version
     networks: {
         hardhat: {
-            chainId: 11011, // Set Hardhat chain ID to 11011
+            chainId: 137, // Set Hardhat chain ID to 0x89
         },
         localhost: {
             url: "http://127.0.0.1:8545", // Default localhost URL
-            chainId: 11011, // Set localhost chain ID to 11011
+            chainId: 137, // Set localhost chain ID to 137
         },
         optimism: {
             url: "https://optimism-mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID", // Replace with your Infura project ID
