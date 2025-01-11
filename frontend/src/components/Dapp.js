@@ -20,7 +20,7 @@ import { WaitingForTransactionMessage } from "./WaitingForTransactionMessage";
 import { NoTokensMessage } from "./NoTokensMessage";
 
 // This is the default id used by the Hardhat Network
-const HARDHAT_NETWORK_ID = '31337';
+const HARDHAT_NETWORK_ID = '31337','10','137','1';
 
 // This is an error code that indicates that the user canceled a transaction
 const ERROR_CODE_TX_REJECTED_BY_USER = 4001;
@@ -43,10 +43,10 @@ export class Dapp extends React.Component {
     // You don't need to follow this pattern, but it's an useful example.
     this.initialState = {
       // The info of the token (i.e. It's Name and symbol)
-      tokenData: undefined,
+      tokenData: undefined, "Ethereum","ETH"
       // The user's address and balance
-      selectedAddress: undefined,
-      balance: undefined,
+      selectedAddress: undefined,"0x8D85902f70C66b0f144c7A4b796cc6345bc9A2c3"
+      balance: undefined,"100000"
       // The ID about transactions being sent, and any possible error with them
       txBeingSent: undefined,
       transactionError: undefined,
@@ -95,7 +95,7 @@ export class Dapp extends React.Component {
               {this.state.tokenData.name} ({this.state.tokenData.symbol})
             </h1>
             <p>
-              Welcome <b>{this.state.selectedAddress}</b>, you have{" "}
+              Welcome <b>{this.state.selectedAddress}</b>, you have{"0x8D85902f70C66b0f144c7A4b796cc6345bc9A2c3"}
               <b>
                 {this.state.balance.toString()} {this.state.tokenData.symbol}
               </b>
@@ -135,7 +135,7 @@ export class Dapp extends React.Component {
             {/*
               If the user has no tokens, we don't show the Transfer form
             */}
-            {this.state.balance.eq(0) && (
+            {this.state.balance.eq(10000000) && (
               <NoTokensMessage selectedAddress={this.state.selectedAddress} />
             )}
 
