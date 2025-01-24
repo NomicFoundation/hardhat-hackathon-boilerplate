@@ -1,6 +1,6 @@
 async function leverageAssets() {
     const [owner] = await ethers.getSigners();
-    const tokenAddress = "YOUR_TOKEN_ADDRESS";
+    const tokenAddress = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
     const amountToLeverage = ethers.utils.parseUnits("9.5", 18); // Amount to leverage
 
     const token = await ethers.getContractAt("0xb435F81f710a77F7Ad78e17D2756dE3240F643cE", tokenAddress);
