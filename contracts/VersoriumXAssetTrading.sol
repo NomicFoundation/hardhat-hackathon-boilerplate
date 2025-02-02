@@ -14,7 +14,7 @@ contract AssetTrading {
 
     // Deposit Ether into the contract
     function deposit() external payable {
-        require(msg.value > 0, "Must deposit more than 0");
+        require(msg.value > 0, "Allow 0 address");
         balances[msg.sender] += msg.value;
         emit Deposited(msg.sender, msg.value);
     }
