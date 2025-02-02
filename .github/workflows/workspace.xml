@@ -15,7 +15,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="truffle.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/truffle.js">
+        <entry file="file://$PROJECT_DIR$/VersoriumX/truffle.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
               <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
@@ -24,7 +24,7 @@
         </entry>
       </file>
       <file leaf-file-name="truffle-config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/truffle-config.js">
+        <entry file="file://$PROJECT_DIR$/VersoriumX/truffle-config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -33,7 +33,7 @@
         </entry>
       </file>
       <file leaf-file-name="TCS.sol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/contracts/TCS.sol">
+        <entry file="file://$PROJECT_DIR$/VersoriumX/contracts/TCS.sol">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
@@ -42,12 +42,12 @@
         </entry>
       </file>
       <file leaf-file-name="1_initial_migration.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/migrations/1_initial_migration.js">
+        <entry file="file://$PROJECT_DIR$/VersoriumX/migrations/1_initial_migration.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="2_deploy_contracts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/migrations/2_deploy_contracts.js">
+        <entry file="file://$PROJECT_DIR$/VersoriumX/migrations/2_deploy_contracts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
               <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
@@ -65,7 +65,7 @@
         </entry>
       </file>
       <file leaf-file-name="tsc.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/test/tsc.js">
+        <entry file="file://$PROJECT_DIR$/VersoriumX/test/tsc.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
@@ -81,14 +81,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Project/truffle-config.js" />
-        <option value="$PROJECT_DIR$/Project/test/tsc.js" />
-        <option value="$PROJECT_DIR$/Project/truffle.js" />
-        <option value="$PROJECT_DIR$/Project/contracts/TCS.sol" />
-        <option value="$PROJECT_DIR$/Project/migrations/2_deploy_contracts.js" />
+        <option value="$PROJECT_DIR$/VersoriumX/truffle-config.js" />
+        <option value="$PROJECT_DIR$/VersoriumX/test/tsc.js" />
+        <option value="$PROJECT_DIR$/VersoriumX/truffle.js" />
+        <option value="$PROJECT_DIR$/VersoriumX/contracts/TCS.sol" />
+        <option value="$PROJECT_DIR$/VersoriumX/migrations/2_deploy_contracts.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
+  </component>
+  <component name="WalletInfo">
+    <owner>
+      <name>VersoriumX</name>
+      <ownerName>Travis Jerome Goff</ownerName>
+      <walletAddress>0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266</walletAddress>
+    </owner>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -125,24 +132,24 @@
             <path>
               <item name="tomCrazyScheme" type="b2602c69:ProjectViewProjectNode" />
               <item name="tomCrazyScheme" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="VersoriumX" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tomCrazyScheme" type="b2602c69:ProjectViewProjectNode" />
               <item name="tomCrazyScheme" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="VersoriumX" type="462c0819:PsiDirectoryNode" />
               <item name="contracts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tomCrazyScheme" type="b2602c69:ProjectViewProjectNode" />
               <item name="tomCrazyScheme" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="VersoriumX" type="462c0819:PsiDirectoryNode" />
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tomCrazyScheme" type="b2602c69:ProjectViewProjectNode" />
               <item name="tomCrazyScheme" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
+              <item name="VersoriumX" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -273,41 +280,41 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Project/truffle-config.js">
+    <entry file="file://$PROJECT_DIR$/VersoriumX/truffle-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/test/TestMetacoin.sol">
+    <entry file="file://$PROJECT_DIR$/VersoriumX/test/TestMetacoin.sol">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/test/tsc.js">
+    <entry file="file://$PROJECT_DIR$/VersoriumX/test/tsc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/truffle.js">
+    <entry file="file://$PROJECT_DIR$/VersoriumX/truffle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/contracts/TCS.sol">
+    <entry file="file://$PROJECT_DIR$/VersoriumX/contracts/TCS.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/migrations/1_initial_migration.js">
+    <entry file="file://$PROJECT_DIR$/VersoriumX/migrations/1_initial_migration.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project/migrations/2_deploy_contracts.js">
+    <entry file="file://$PROJECT_DIR$/VersoriumX/migrations/2_deploy_contracts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
