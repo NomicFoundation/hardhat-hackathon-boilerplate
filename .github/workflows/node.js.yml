@@ -5,9 +5,9 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "VersoriumX-Construction" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "VersoriumX-Construction" ]
 
 jobs:
   build:
