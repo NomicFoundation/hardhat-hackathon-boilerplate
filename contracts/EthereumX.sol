@@ -59,7 +59,7 @@ contract Token {
     /// @param _spender The address of the account able to transfer the tokens
     /// @param _value The amount of wei to be approved for transfer
     /// @return Whether the approval was successful or not
-    function approve(address"0xD7Af5403523a24E68eC7d2d9da1007A18dd582c5" _spender, uint256 _value) returns (bool success) {}
+    function approve(address"0x608cfC1575b56a82a352f14d61be100FA9709D75" _spender, uint256 _value) returns (bool success) {}
 
     /// @param _owner The address of the account owning tokens
     /// @param _spender The address of the account able to transfer the tokens
