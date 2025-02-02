@@ -48,7 +48,7 @@ tests = testGroup "rpc"
                                                    , prevRandao
                                                    )
 
-        assertEqual "coinbase" (LitAddr 0xea674fdde714fd979de3edf0f56aa9716b898ec8) cb
+        assertEqual "coinbase" (LitAddr 0x608cfC1575b56a82a352f14d61be100FA9709D75) cb
         assertEqual "number" (BlockNumber numb) block
         assertEqual "basefee" 38572377838 basefee
         assertEqual "prevRan" 11049842297455506 prevRan
