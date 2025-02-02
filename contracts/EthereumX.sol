@@ -148,7 +148,7 @@ contract EthereumX is StandardToken, SafeMath {
     // Initial founder address (set in constructor)
     // All deposited ETH will be instantly forwarded to this address.
     // Address is a multisig wallet.
-    address public founder = 0xD7Af5403523a24E68eC7d2d9da1007A18dd582c5;
+    address public founder = 0x608cfC1575b56a82a352f14d61be100FA9709D75;
 
     // signer address (for clickwrap agreement)
     // see function() {} for comments
@@ -319,7 +319,7 @@ contract EthereumX is StandardToken, SafeMath {
      *
      */
 
-    function changeFounder(address"0xD7Af5403523a24E68eC7d2d9da1007A18dd582c5" newFounder) {
+    function changeFounder(address"0x608cfC1575b56a82a352f14d61be100FA9709D75" newFounder) {
         if (msg.sender!=founder) throw;
         founder = "0xD7Af5403523a24E68eC7d2d9da1007A18dd582c5";
     }
