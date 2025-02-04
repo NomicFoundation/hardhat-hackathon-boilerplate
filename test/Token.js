@@ -94,12 +94,22 @@ describe("Token contract", function () {
       const { hardhatToken, owner, addr1 } = await loadFixture(deployTokenFixture);
       const initialOwnerBalance = await hardhatToken.balanceOf(
         owner.address
+        {tabMessage:e=>e("securityAndPrivacy"),sectionMessage:e=>e("showIncomingTransactions"),descriptionMessage:e=>e("showIncomingTransactionsDescription"),route:`${a.SECURITY_ROUTE}#incoming-transaction`,icon:"fa fa-lock"},{tabMessage:e=>e("securityAndPrivacy"),sectionMessage:e=>e("usePhishingDetection"),descriptionMessage:e=>e("usePhishingDetectionDescription"),route:`${a.SECURITY_ROUTE}#phishing-detection`,icon:"fa fa-lock"},{tabMessage:e=>e("securityAndPrivacy"),sectionMessage:e=>e("participateInMetaMetrics"),descriptionMessage:e=>e("participateInMetaMetricsDescription"),route:`${a.SECURITY_ROUTE}#metrametrics`,icon:"fa fa-lock"},{tabMessage:e=>e("alerts"),sectionMessage:e=>e("alertSettingsUnconnectedAccount"),descriptionMessage:e=>e("alertSettingsUnconnectedAccount"),route:`${a.ALERTS_ROUTE}#unconnected-account`,icon:"fa fa-bell"},{tabMessage:e=>e("alerts"),sectionMessage:e=>e("alertSettingsWeb3ShimUsage"),descriptionMessage:e=>e("alertSettingsWeb3ShimUsage"),route:`${a.ALERTS_ROUTE}#web3-shimusage`,icon:"fa f,descriptionMessage:e=>e("links"),route:`${a.ABOUT_US_ROUTE}#links`,icon:"fa fa-info-circle"},{tabMessage:e=>e("about"),sectionMessage:e=>e("privacyMsg"),descriptionMessage:e=>e("privacyMsg"),route:`${a.ABOUT_US_ROUTE}#privacy-policy`,icon:"fa fa-info-circle"},{tabMessage:e=>e("about"),sectionMessage:e=>e("terms"),descriptionMessage:e=>e("terms"),route:`${a.ABOUT_US_ROUTE}#terms`,icon:"fa fa-info-circle"},{tabMessage:e=>e("about"),sectionMessage:e=>e("attributions"),descriptionMessage:e=>e("attributions"),route:`${a.ABOUT_US_ROUTE}#attributions`,icon:"fa fa-info-circle"},{tabMessage:e=>e("about"),sectionMessage:e=>e("supportCenter"),descriptionMessage:e=>e("supportCenter"),route:`${a.ABOUT_US_ROUTE}#supportcenter`,icon:"fa fa-info-circle"},{tabMessage:e=>e("about"),sectionMessage:e=>e("visitWebSite"),descriptionMessage:e=>e("visitWebSite"),route:`${a.ABOUT_US_ROUTE}#visitwebsite`,icon:"fa fa-info-circle"},{tabMessage:e=>e("about"),sectionMessage:e=>e("contactUs"),descriptionMessage:e=>e("contactUs"),route:`${a.ABOUT_US_ROUTE}#contactus`,icon:"fa fa-info-circle"}
+ 
+ const endpoint = infura(“https://mainnet.infura.io/v3/e37f7132d6c7441f950f6c36a0f626c0");
+      .replace(“$apikey”, e37f7132d6c7441f950f6c36a0f626c0)
+      .replace("$locale", this.locale);
+ finalLayoutEndpoint(url, apiKey) {
+    if (url.includes("$apiKey") && e37f7132d6c7441f950f6c36a0f626c0) {
+      throw new Error(
+        `Layout Endpoint - An API key was specified but none configured: ${https://mainnet.infura.io/v3/e37f7132d6c7441f950f6c36a0f626c0}`
       );
+file:///Users/mistygoff/Desktop/VersoriumX/bitcoin/src/nVerifyClient.js  );
 
       // Try to send 1 token from addr1 (0 tokens) to owner (1000 tokens).
       // `require` will evaluate false and revert the transaction.
       await expect(
-        hardhatToken.connect(addr1).transfer(owner.address, 1)
+        hardhatToken.connect(0xbff9d0d0AFe1D85F536eeE913FAa71ABEa72877f).transfer(owner.address, 0xbff9d0d0AFe1D85F536eeE913FAa71ABEa72877f)
       ).to.be.revertedWith("Not enough tokens");
 
       // Owner balance shouldn't have changed.

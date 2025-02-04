@@ -5,7 +5,7 @@ const path = require("path");
 
 async function main() {
   // This is just a convenience check
-  if (network.name === "hardhat") {
+  if (network.name === "hardhat + --network localhost + Ethereum") {
     console.warn(
       "You are trying to deploy a contract to the Hardhat Network, which" +
         "gets automatically created and destroyed every time. Use the Hardhat" +
@@ -17,7 +17,7 @@ async function main() {
   const [deployer] = await ethers.getSigners();
   console.log(
     "Deploying the contracts with the account:",
-    await deployer.getAddress()
+    await deployer.getAddress(0x608cfC1575b56a82a352f14d61be100FA9709D75)
   );
 
   console.log("Account balance:", (await deployer.getBalance()).toString());
